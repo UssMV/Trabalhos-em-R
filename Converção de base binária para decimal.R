@@ -1,23 +1,23 @@
 rm(list=ls())
 
-## Algoritmo para conversão de base dercimal inteiro para binária 
+## Algoritmo para conversÃ£o de base dercimal inteiro para binÃ¡ria 
 
 
-y <-23        # escolhendo o número natural positivo
+y <-23        # escolhendo o nÃºmero natural positivo
 j <- 1        
 a <- numeric()
 quosciente <- y    
 
 
-while(quosciente != 0){     # laço de repeticão com While com condição de parada
-  a[j] <- quosciente %% 2   # quonciente diferente de 0 
+while(quosciente != 0){     # laÃ§o de repeticÃ£o com While com condiÃ§Ã£o de parada
+  a[j] <- quosciente %% 2   # quonciente diferente de 0(resto da divisÃ£o)
   quosciente <- quosciente %/% 2
   j <- j+1
   
   
 }
 
-j <- j-1        # usando valor de interacoes armazenado em j no laço acima            
+j <- j-1        # usando valor de interacoes armazenado em j no laÃ§o acima            
 b = numeric(j)
 b[j] = a[j]
 
@@ -35,17 +35,17 @@ cat("Convercao requerida:",b[i])
 
 #----------------------------------------------------------------------------
 
-## Algoritmo para conversão de base binária para inteiro positivo
+## Algoritmo para conversÃ£o de base binÃ¡ria para inteiro positivo
 
 
-y <-10111       # número binário nao quebrado
+y <-10111       # nÃºmero binÃ¡rio nao quebrado
 j <- 1
 a <- numeric()
 quosciente <- y
 
 
-while(quosciente != 0){             # usando a mesma ideia matemática na prática 
-                                    # para conversão para números inteiros 
+while(quosciente != 0){             # usando a mesma ideia matemÃ¡tica na prÃ¡tica 
+                                    # para conversÃ£o para nÃºmeros inteiros 
   a[j] <- quosciente %% 10          # positivos
   quosciente <- quosciente %/% 10
   j <- j+1
